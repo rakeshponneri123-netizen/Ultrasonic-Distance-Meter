@@ -1,0 +1,24 @@
+PROJECT REPORT: ULTRASONIC DISTANCE METER
+CODTECH IT SOLUTIONS INTERNSHIP PROJECT REPORT
+
+1. EXECUTIVE SUMMARY:
+Traditional physical measurement devices require direct surface contact, which is unfeasible in industrial sorting grids, deep fluid level tracking, and automated vehicle safety systems. This project presents the comprehensive framework for a non-contact Ultrasonic Distance Meter. Utilizing high-frequency sound wave reflection patterns alongside processing microcontrollers, it provides an absolute framework for contactless real-time physical proximity calculation.
+
+2. MATHEMATICAL DERIVATION & OPERATIONAL PATHWAY:
+The sensor works on the principle of Echo. Let 'V' denote the speed of sound in air at normal room temperature, which is approximately 343 meters per second (or 0.0343 cm per microsecond). Let 't' represent the total elapsed round-trip time logged from transmitter trigger to receiver detection.
+
+Since the sound wave travels forward to the target object and reflects backward over the exact same distance, the total space traversed is exactly twice the single-way distance (2 * d). Therefore:
+
+2 * d = V * t
+d = (V * t) / 2
+
+Substituting the speed of sound:
+Distance (cm) = (0.0343 * t) / 2
+Distance (cm) = t / 58.3
+
+The central core controller evaluates this formula instantly inside its timing register loops to refresh the user display metrics.
+
+3. EXPECTED OUTCOMES:
+- High accuracy metrics with low margin-of-error rates down to +/- 3mm.
+- Zero-contact range tracking spanning from 2 centimeters up to 400 centimeters.
+- Inexpensive component costs, perfect for scaling into industrial automation environments.
