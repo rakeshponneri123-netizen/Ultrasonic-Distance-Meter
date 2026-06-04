@@ -1,0 +1,27 @@
+========================================================================
+HARDWARE PACKAGING & VISUAL UI DISPLAY SPECIFICATIONS
+========================================================================
+
+1. PRODUCT PHYSICAL STRUCTURE & LAYOUT:
+- Front Edge: Features twin acoustic cylinders resembling eyes (one Transmitter nozzle and one Receiver nozzle).
+- Top Surface: Integrated digital OLED or 7-segment character display.
+- Rear Module: Houses a small piezo buzzer component utilized for proximity sound triggers.
+
+2. SYSTEM VISUAL DISPLAY READOUT MATRIX:
+
+[NOMINAL STATE READING]
+--------------------------------
+| DISTANCE: 150 CM |  <- Row 1 (Displays calculated numeric range)
+| ZONE: SAFE       |  <- Row 2 (Confirms obstacle is far away)
+--------------------------------
+
+[CRITICAL PROXIMITY ALERT SCREEN]
+--------------------------------
+| DISTANCE: 10 CM  |  <- Row 1 (Flashes numeric metrics rapidly)
+| ALERT: TOO CLOSE |  <- Row 2 (Displays critical trigger text)
+--------------------------------
+
+3. PROXIMITY ALARM FREQUENCY MATRIX:
+- Object Distance > 100 cm: Buzzer state remains completely silent.
+- Object Distance between 20 cm and 50 cm: Buzzer gives slow warning pulses.
+- Object Distance < 15 cm: Buzzer activates a continuous high-frequency tone.
